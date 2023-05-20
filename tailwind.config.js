@@ -6,9 +6,9 @@ module.exports = {
     extend: {
       colors: {
         theme: "#2C2C34",
-        themeDarker: "#0e1721",
+        themeDarker: "#1F1E1F",
         link: "#FFD15C",
-        yello:"#F9D74C",
+        yello:"#0CA88E",
         bleu:"#6C6CE5",
         pynk:"#F97B8B"
         

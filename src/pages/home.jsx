@@ -67,31 +67,23 @@ const Home = () => {
             <div className="absolute inset-0 bg-black opacity-50"> </div>
             <Landing ScrollToSection={ScrollToSection} ref={landing} />
           </div>
-          <Animate ref={about} onScreen={aboutIn}>
-            <div className="scroll-mt-28">
-              <About ref={about} />
-            </div>
-          </Animate>
-          <Animate ref={experience} onScreen={experienceIn}>
-            <div className="scroll-mt-28">
-              <Experience ref={experience} />
-            </div>
-          </Animate>
-          <Animate ref={services} onScreen={servicesIn}>
-            <div className="scroll-mt-28">
-              <Services ref={services} />
-            </div>
-          </Animate>
-          <Animate ref={projects} onScreen={projectsIn}>
-            <div className="scroll-mt-28">
-              <Projects ref={projects} />
-            </div>
-          </Animate>
-          <Animate ref={contact} onScreen={contactIn}>
-            <div className="scroll-mt-28">
-              <Contact ref={contact} />
-            </div>
-          </Animate>
+
+          <div className="scroll-mt-28">
+            <About ref={about} />
+          </div>
+          <div className="scroll-mt-28">
+          <Services ref={services} />
+        </div>
+          <div className="scroll-mt-28">
+            <Projects ref={projects} />
+          </div>
+          <div className="scroll-mt-28">
+            <Experience ref={experience} />
+          </div>
+        
+          <div className="scroll-mt-28">
+            <Contact ref={contact} />
+          </div>
         </div>
         <Footer />
       </div>

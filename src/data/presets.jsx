@@ -108,10 +108,12 @@ export const Data = {
       {
         name: "Auto Body Repairs",
         description: "Our skilled craftsmen are equipped with the most up-to-date tools, including the double-sided spotter 14000 AMPS, to repair, install, and accurately spot weld panels."
+        ,img:"https://rawgit.com"
       },
       {
         name: "Chassis Straightening",
         description: "All chassis defects are straightened on our celette bench and electronically measured using a computerized measuring system in accordance with manufacturer requirements."
+        ,img:"https://rawgit.com"
       },
       {
         name: "Spray Painting",
