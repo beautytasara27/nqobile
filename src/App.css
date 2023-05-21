@@ -35,3 +35,33 @@ header {
   animation-delay: 0s;
   animation-duration: 2s;
 }
+.head {  
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 1.2s ease-out 0s 1 slideInFromLeft;
+
+}
+.container {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.background-image {
+  background-image: url('/public/engine.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  margin-top: 100vh;
+  padding: 28px 0;
+}
+
+.scroll-mt-28 {
+  margin-top: 28px;
+}

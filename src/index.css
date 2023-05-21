@@ -4,17 +4,22 @@
 
 @font-face {
   font-family: "RUBIK-REGULAR";
-  src: url("../src/assets/fonts/calibre/CalibreRegular.otf");
+  src: url("../src/assets/fonts/qua/QuattrocentoSans-Regular.ttf");
   font-display: block; /* Fix flickering */
 }
 @font-face {
   font-family: "RUBIK-BOLD";
-  src: url("../src/assets/fonts/calibre/CalibreBold.otf");
+  src: url("../src/assets/fonts/qua/QuattrocentoSans-Bold.ttf");
   font-display: block; /* Fix flickering */
 }
 @font-face {
   font-family: "RUBIK-LIGHT";
-  src: url("../src/assets/fonts/calibre/CalibreLight.otf");
+  src: url("../src/assets/fonts/qua/QuattrocentoSans-Regular.ttf");
+  font-display: block; /* Fix flickering */
+}
+@font-face {
+  font-family: "ANTON-REGULAR";
+  src: url("../src/assets/fonts/anton/Anton-Regular.ttf");
   font-display: block; /* Fix flickering */
 }
 body {

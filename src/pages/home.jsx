@@ -2,19 +2,15 @@ import Header from "../components/Header";
 import Landing from "../components/Landing";
 import About from "../components/About";
 import { useRef } from "react";
-import Services from "../components/Services";
-import Experience from "../components/Experience";
+import Gallery from "../components/Gallery";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import useIsInViewport from "../helpers/useOnScreen";
 import Projects from "../components/Projects";
-import Socials from "../components/Socials";
-import Animate from "../helpers/Animate";
-import homeImage from "../assets/images/home.jpg";
+import homeImage from "../assets/images/engine.jpg";
 const Home = () => {
   const landing = useRef(null);
   const about = useRef(null);
-  const services = useRef(null);
   const experience = useRef(null);
   const contact = useRef(null);
   const projects = useRef(null);
@@ -23,8 +19,6 @@ const Home = () => {
       landing.current.scrollIntoView({ behavior: "smooth", block: "start" });
     } else if (section === "about") {
       about.current.scrollIntoView({ behavior: "smooth", block: "start" });
-    } else if (section === "services") {
-      services.current.scrollIntoView({ behavior: "smooth", block: "start" });
     } else if (section === "experience") {
       experience.current.scrollIntoView({ behavior: "smooth", block: "start" });
     } else if (section === "contact") {
@@ -34,7 +28,6 @@ const Home = () => {
     }
   };
   const landingIn = useIsInViewport(landing);
-  const servicesIn = useIsInViewport(services);
   const aboutIn = useIsInViewport(about);
   const experienceIn = useIsInViewport(experience);
   const contactIn = useIsInViewport(contact);
@@ -46,41 +39,40 @@ const Home = () => {
         <Header
           ScrollToSection={ScrollToSection}
           landingIn={landingIn}
-          servicesIn={servicesIn}
           aboutIn={aboutIn}
           experienceIn={experienceIn}
           contactIn={contactIn}
           projectsIn={projectsIn}
         />
-        <div className="">
-          <div
-            className="scroll-mt-28 relative"
-            style={{
-              backgroundImage: `url(${homeImage})`,
-              backgroundSize: "cover",
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "center center",
-              width: "100%",
-              height: "100vh",
-            }}
-          >
-            <div className="absolute inset-0 bg-black opacity-50"> </div>
-            <Landing ScrollToSection={ScrollToSection} ref={landing} />
+        <div className="bg-white ">
+          <div className="lg:p-10">
+            <div
+              className="hidden lg:block scroll-mt-28 relative "
+              style={{
+                backgroundImage: `url(${homeImage})`,
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center center",
+                width: "100%",
+                height: "100vh",
+              }}
+            >
+              <Landing ScrollToSection={ScrollToSection} ref={landing} />
+            </div>
+            <div className="lg:hidden scroll-mt-28 relative">
+              <Landing ScrollToSection={ScrollToSection} ref={landing} />
+            </div>
+          </div>
+          <div className="scroll-mt-28">
+            <About ref={about} aboutIn={aboutIn} />
+          </div>
+          <div className="scroll-mt-28">
+            <Projects ref={projects} projectsIn={projectsIn} />
+          </div>
+          <div className="scroll-mt-28">
+            <Gallery ref={experience} experienceIn={experienceIn} />
           </div>
 
-          <div className="scroll-mt-28">
-            <About ref={about} />
-          </div>
-          <div className="scroll-mt-28">
-          <Services ref={services} />
-        </div>
-          <div className="scroll-mt-28">
-            <Projects ref={projects} />
-          </div>
-          <div className="scroll-mt-28">
-            <Experience ref={experience} />
-          </div>
-        
           <div className="scroll-mt-28">
             <Contact ref={contact} />
           </div>

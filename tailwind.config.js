@@ -17,6 +17,7 @@ module.exports = {
         "rubik-regular": ["Rubik-Regular", "sans-serif"],
         "rubik-bold": ["Rubik-Bold", "sans-serif"],
         "rubik-light": ["Rubik-Light", "sans-serif"],
+        "anton-regular": ["Anton-Regular", "sans-serif"],
       },
     },
   },

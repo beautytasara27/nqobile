@@ -1,27 +1,28 @@
 import AppContext from "../../context/AppContext";
-import Avatar from "../../assets/images/programmer.webp";
 import { forwardRef, useContext } from "react";
-import AboutImage from "../../assets/images/about.jpg";
+import AboutImage from "../../assets/images/crashed.jpg";
 const About = forwardRef((props, ref) => {
   const { About } = useContext(AppContext);
-
+  if (props.aboutIn) {
+    document.getElementById("about").classList.add("landing");
+  }
   return (
-    <div className="mb-20">
-      <div className="flex justify-center  mx-4 sm:mx-6 lg:mx-8 my-20  font-rubik-regular ">
+    <div className=" mb-20">
+      <div className="flex justify-center  mx-4 sm:mx-6 lg:mx-8 my-20  font-rubik-regular text-sm ">
         <div className="w-full max-w-6xl ">
           <div>
             <h1
               ref={ref}
-              className="scroll-mt-40 font-rubik-bold text-2xl mb-20"
+              className="scroll-mt-40 font-anton-regular tracking-wider text-2xl mb-20  text-black"
             >
               <span className="lg:pr-4 text-yello">01.</span>About Us
             </h1>
           </div>
-          <div className="sm:flex w-full sm:space-x-8 space-y-4 sm:space-y-0">
-            <div className="p-10 bg-themeDarker text-white sm:w-1/3 space-y-4 hover:border-b border-yello group hover:scale-110 transform transition duration-300 ease-in-out">
+          <div id="about" className=" sm:flex w-full sm:space-x-8 space-y-4 sm:space-y-0">
+            <div className=" p-10 bg-themeDarker text-white sm:w-1/3 space-y-4 hover:border-b-8 border-yello group hover:scale-110 transform transition duration-300 ease-in-out">
               <div className="flex justify-center space-x-2 items-center ">
                 <i className="fa-solid fa-eye group-hover:text-yello"></i>
-                <h2 className="text-center text-3xl">Our Vision</h2>
+                <h2 className="text-center text-2xl">Our Vision</h2>
               </div>
               <p className="text-center">
                 Being the top body repair and panel refurbishment facility in
@@ -30,10 +31,10 @@ const About = forwardRef((props, ref) => {
                 service delivery
               </p>
             </div>
-            <div className="p-10 bg-themeDarker text-white sm:w-1/3 space-y-4 hover:border-b border-yello group hover:scale-110 transform transition duration-300 ease-in-out">
+            <div className="p-10 bg-themeDarker text-white sm:w-1/3 space-y-4  hover:border-b-8 border-yello group hover:scale-110 transform transition duration-300 ease-in-out">
               <div className="flex justify-center space-x-2 items-center ">
                 <i className="fa-solid fa-rocket  group-hover:text-yello"></i>
-                <h2 className="text-center text-3xl">Our Mission</h2>
+                <h2 className="text-center text-2xl">Our Mission</h2>
               </div>
               <p className="text-center">
                 Our goal as a company is to offer our clients the best spray
@@ -42,10 +43,10 @@ const About = forwardRef((props, ref) => {
                 and overseas.
               </p>
             </div>
-            <div className="p-10 bg-themeDarker text-white sm:w-1/3 space-y-4 hover:border-b border-yello group hover:scale-110 transform transition duration-300 ease-in-out">
+            <div className="p-10 bg-themeDarker text-white sm:w-1/3 space-y-4 hover:border-b-8 border-yello group hover:scale-110 transform transition duration-300 ease-in-out">
               <div className="flex justify-center space-x-2 items-center ">
                 <i className="fa-solid fa-scale-balanced group-hover:text-yello"></i>
-                <h2 className="text-center text-3xl">Our Values</h2>
+                <h2 className="text-center text-2xl">Our Values</h2>
               </div>
               <div className="flex flex-col justify-center items-center">
                 <p>Innovation</p>
@@ -58,17 +59,17 @@ const About = forwardRef((props, ref) => {
           </div>
         </div>
       </div>
-      <div className="flex w-full mt-0 space-x-4 pr-4 sm:pr-6 lg:pr-8 py-0 bg-themeDarker ">
-        <div className="w-1/2">
+      <div className="sm:flex w-full py-4 sm:pt-0 sm:space-x-4 px-4 sm:px-0 sm:pr-6 lg:pr-8  bg-themeDarker ">
+        <div className="sm:w-1/2">
           <img
-            className="w-full sepia hover:sepia-0"
+            className="w-full hover:sepia-0"
             alt="about image"
             src={AboutImage}
           />
         </div>
-        <div className="w-1/2">
-          <h2 className="text-3xl mt-10">Richjane Panel Beaters</h2>
-          <div className="flex flex-col space-y-4">
+        <div className="sm:w-1/2">
+          <h2 className="text-2xl mt-10">Richjane Panel Beaters</h2>
+          <div className="flex flex-col space-y-4 text-sm">
             <p className="mt-4">
               Richjane Panel Beaters. Leading registered automobile business
               Richjane Panel beaters focuses primarily on body repairs in
