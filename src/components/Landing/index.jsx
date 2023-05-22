@@ -3,7 +3,7 @@ import AppContext from "../../context/AppContext";
 const Landing = forwardRef(({ ScrollToSection }, ref) => {
   const { Landing } = useContext(AppContext);
   return (
-    <div ref={ref} className="landingImage bg-red-500 flex justify-center mt-50 h-screen   mx-4 sm:mx-6 lg:mx-8 text-black">
+    <div ref={ref} className="landingImage flex justify-center mt-50 h-screen   mx-4 sm:mx-6 lg:mx-8 text-black">
       <div  className="w-full max-w-6xl h-full bg-white lg:bg-transparent flex justify-center items-center lg:items-end" >
         <div className="hidden lg:flex justify-center items-center mb-20">
           <button
