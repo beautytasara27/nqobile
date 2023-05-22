@@ -47,21 +47,12 @@ const Home = () => {
         <div className="bg-white ">
           <div className="lg:p-10">
             <div
-              className="hidden lg:block scroll-mt-28 relative "
-              style={{
-                backgroundImage: `url(${homeImage})`,
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center center",
-                width: "100%",
-                height: "100vh",
-              }}
+              className="scroll-mt-28  "
+             
             >
               <Landing ScrollToSection={ScrollToSection} ref={landing} />
             </div>
-            <div className="lg:hidden scroll-mt-28 relative">
-              <Landing ScrollToSection={ScrollToSection} ref={landing} />
-            </div>
+            
           </div>
           <div className="scroll-mt-28">
             <About ref={about} aboutIn={aboutIn} />

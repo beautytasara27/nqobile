@@ -3,7 +3,6 @@ import Logo from "../../assets/images/logo.jpg";
 const Header = ({
   ScrollToSection,
   landingIn,
-  servicesIn,
   aboutIn,
   experienceIn,
   contactIn,

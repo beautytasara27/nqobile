@@ -3,8 +3,8 @@ import AppContext from "../../context/AppContext";
 const Landing = forwardRef(({ ScrollToSection }, ref) => {
   const { Landing } = useContext(AppContext);
   return (
-    <div className="flex justify-center h-screen items-center lg:items-end   mx-4 sm:mx-6 lg:mx-8 text-black">
-      <div className="w-full max-w-6xl " ref={ref}>
+    <div ref={ref} className="landingImage bg-red-500 flex justify-center mt-50 h-screen   mx-4 sm:mx-6 lg:mx-8 text-black">
+      <div  className="w-full max-w-6xl h-full bg-white lg:bg-transparent flex justify-center items-center lg:items-end" >
         <div className="hidden lg:flex justify-center items-center mb-20">
           <button
             className=" bg-white w-[60px] h-[60px] animate-bounce rounded-[30px] border  border-yello  hover:bg-black hover:bg-opacity-100 hover:text-white transition ease-in duration-500"
@@ -13,7 +13,7 @@ const Landing = forwardRef(({ ScrollToSection }, ref) => {
             <i className="fa-solid fa-2x fa-angles-down"></i>
           </button>
         </div>
-        <div className="lg:hidden space-y-6 font-rubik-regular ">
+        <div  className="lg:hidden space-y-6 font-rubik-regular ">
           <h1 className="text-4xl lg:text-7xl font-anton-regular tracking-widest">
             {" "}
             {Landing.name}
