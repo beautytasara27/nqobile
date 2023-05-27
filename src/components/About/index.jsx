@@ -13,7 +13,7 @@ const About = forwardRef((props, ref) => {
           <div>
             <h1
               ref={ref}
-              className="scroll-mt-40 font-anton-regular tracking-wider text-2xl mb-20  text-black"
+              className="scroll-mt-40 font-anton-regular tracking-wider text-2xl mb-20  text-white"
             >
               <span className="lg:pr-4 text-yello">01.</span>About Us
             </h1>

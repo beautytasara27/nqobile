@@ -44,7 +44,7 @@ const Home = () => {
           contactIn={contactIn}
           projectsIn={projectsIn}
         />
-        <div className="bg-white ">
+        <div className="bg-theme ">
           <div className="lg:p-10">
             <div
               className="scroll-mt-28  "

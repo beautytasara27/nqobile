@@ -1,12 +1,12 @@
 const Footer = () => {
   return (
     <div className="font-rubik-regular text-sm">
-      <div className=" flex flex-col space-y-4 py-5 justify-center items-center  font-rubik-bold text-gray-500">
-        <h1 className="text-black uppercase text-center font-anton-regular text-2xl tracking-[.25em]">
+      <div className=" flex flex-col space-y-4 py-5 justify-center items-center  font-rubik-bold text-gray-400">
+        <h1 className="text-mint uppercase text-center font-anton-regular text-2xl tracking-[.25em]">
           RichJane Enterprise
         </h1>
 
-        <div className="sm:flex space-x-4 text-black">
+        <div className="sm:flex space-x-4 text-white">
           <i className="fa-regular  fa-envelope "></i>
           <i className="fa-brands  fa-instagram "></i>
           <i className="fa-brands  fa-facebook-f "></i>

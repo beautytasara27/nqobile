@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Logo from "../../assets/images/logo.jpg";
+import Logo from "../../assets/images/logo.png";
 const Header = ({
   ScrollToSection,
   landingIn,
@@ -11,14 +11,14 @@ const Header = ({
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="flex justify-center">
-      <div className="fixed z-50 top-0 w-full flex justify-center font-rubik-regular py-2 sm:py-6 bg-white">
+      <div className="fixed z-50 top-0 w-full flex justify-center font-rubik-regular py-2 sm:py-6 bg-theme">
         <div className="w-full flex justify-between items-center  relative mx-4 sm:mx-6 lg:mx-8 xl:0">
           <img src={Logo} alt="logo" width={100} />
           <div className="flex flex-col space-y-2">
-            <h1 className="hidden sm:block text-black uppercase text-center font-anton-regular text-2xl tracking-[.25em]">
+            <h1 className="hidden sm:block text-mint uppercase text-center font-anton-regular text-2xl tracking-[.25em]">
               RichJane Enterprise
             </h1>
-            <header className="hidden md:flex items-center text-base justify-center flex-grow space-x-8 text-black">
+            <header className="hidden md:flex items-center text-base justify-center flex-grow space-x-8 text-white">
               <h2
                 className={landingIn ? "text-yello" : ""}
                 onClick={() => ScrollToSection("landing")}
@@ -52,14 +52,14 @@ const Header = ({
               </h2>
             </header>
           </div>
-          <div className="hidden sm:flex space-x-4 text-black ">
-            <i className="fa-regular  fa-envelope hover:text-yello "></i>
-            <i className="fa-brands  fa-instagram hover:text-yello"></i>
-            <i className="fa-brands  fa-facebook-f hover:text-yello"></i>
+          <div className="hidden sm:flex space-x-4 text-white ">
+            <i className="fa-regular  fa-envelope hover:text-mint "></i>
+            <i className="fa-brands  fa-instagram hover:text-mint"></i>
+            <i className="fa-brands  fa-facebook-f hover:text-mint"></i>
           </div>
 
           <svg
-            className="w-12 h-12 md:hidden text-black"
+            className="w-12 h-12 md:hidden text-white"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"

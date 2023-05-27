@@ -17,7 +17,7 @@ const Contact = forwardRef((props, ref) => {
           <div className="sm:flex w-full space-y-4 sm:space-y-0 text-sm">
             <div className="sm:w-1/2">
               <h2 className="mt-2 mb-4 text-2xl ">Contact Details</h2>
-              <p className="mt-2 mb-4 text-gray-400 ">
+              <p className="mt-2 mb-4 text-gray-300 ">
                 Get in touch with the professionals at Richjane Enterprise for
                 quality services at competitive prices.{" "}
               </p>
@@ -54,22 +54,22 @@ const Contact = forwardRef((props, ref) => {
               <input
                 name="Name"
                 placeholder="Your Name"
-                className="bg-transparent border-gray-600 p-2 border-1 border hover:border-yello focus:border-yello focus:outline-none"
+                className="bg-transparent border-gray-400 p-2 border-1 border hover:border-yello focus:border-yello focus:outline-none"
               />
               <input
                 name="Email"
                 placeholder="Your Email"
-                className="bg-transparent border-gray-600 p-2 border-1 border hover:border-yello focus:border-yello focus:outline-none"
+                className="bg-transparent border-gray-400 p-2 border-1 border hover:border-yello focus:border-yello focus:outline-none"
               />
               <input
                 placeholder="Subject"
-                className="bg-transparent border-gray-600 p-2 border-1 border hover:border-yello focus:border-yello focus:outline-none"
+                className="bg-transparent border-gray-400 p-2 border-1 border hover:border-yello focus:border-yello focus:outline-none"
               />
               <textarea
                 name="Message"
                 rows="4"
                 placeholder="Message"
-                className="bg-transparent border-gray-600 p-2 border-1 border hover:border-yello focus:border-yello focus:outline-none"
+                className="bg-transparent border-gray-400 p-2 border-1 border hover:border-yello focus:border-yello focus:outline-none"
               />
               <button
                 className="border px-5 py-4 border-yello rounded-[4px] hover:bg-white hover:bg-opacity-100 hover:text-black transition ease-in duration-500"

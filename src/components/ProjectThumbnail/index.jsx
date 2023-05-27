@@ -17,7 +17,7 @@ const ProjectThumbnail = ({ project }) => {
       {!isExpanded && (
         <button
           onClick={toggleExpanded}
-          className="text-xs text-yello cursor-pointer"
+          className="text-xs text-themeDarker cursor-pointer"
         >
           Read more
         </button>
@@ -25,7 +25,7 @@ const ProjectThumbnail = ({ project }) => {
       {isExpanded && (
         <button
           onClick={toggleExpanded}
-          className="text-xs text-blue-500 hover:text-blue-700 cursor-pointer"
+          className="text-xs text-mint hover:text-themeDarker cursor-pointer"
         >
           Read less
         </button>

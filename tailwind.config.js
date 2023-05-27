@@ -5,10 +5,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        theme: "#2C2C34",
-        themeDarker: "#1F1E1F",
+        theme: "#142931",  //#142931, #143443
+        themeDarker: "#1E7E87", //#1E7E87, #1E6F5C
         link: "#FFD15C",
-        yello:"#0CA88E",
+        mint:"#4ADBCB", //#0CA88E,#4ADBCB
+        yello:"#FFFF99", //, #0CA88E, #E95E4F
         bleu:"#6C6CE5",
         pynk:"#F97B8B"
         

@@ -42,12 +42,6 @@ export const Data = {
       img: "/services/car-repair.png",
     },
     {
-      name: "Chassis Straightening",
-      description:
-        "All chassis defects are straightened on our celette bench and electronically measured using a computerized measuring system in accordance with manufacturer requirements.",
-      img: "/services/chassis.png",
-    },
-    {
       name: "Spray Painting",
       description:
         "A beautiful factory finish is guaranteed by our modern spray booth and oven. We utilize Spice Hacker's water-borne paints, which come with a lifetime warranty.",
@@ -56,7 +50,7 @@ export const Data = {
     {
       name: "Windscreen Repairs",
       description:
-        "For both installing and removing windscreens, we offer a guarantee. We are a partner in the SABS-approved auto glass replacement service and fitment center.",
+        "For both installing and removing windscreens, we offer a guarantee.",
       img: "/services/maintenance.png",
     },
     {
@@ -88,12 +82,6 @@ export const Data = {
       description:
         "We offer free 24hour towing service to our valued customers.",
       img: "/services/tow-truck.png",
-    },
-    {
-      name: "Nano Coating",
-      description:
-        "Nano-coating, also known as a ceramic coating, is the process of applying a surface layer that repels dry particles, water, oil and dirt. They can be found in both liquid and solid form and provide characteristics that are favourable. For instance, a nano coating can make a surface scratch resistant, improve hardness, or make it resistant to bacteria.",
-      img: "/services/nano-coating.png",
     },
     {
       name: "Vehicle Rebuilding",
