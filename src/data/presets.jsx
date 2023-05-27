@@ -39,7 +39,7 @@ export const Data = {
       name: "Auto Body Repairs",
       description:
         "Our skilled craftsmen are equipped with the most up-to-date tools, including the double-sided spotter 14000 AMPS, to repair, install, and accurately spot weld panels.",
-      img: "/services/car-repair.png",
+      img: "/services/repair.png",
     },
     {
       name: "Spray Painting",
@@ -57,7 +57,7 @@ export const Data = {
       name: "Auto Valet",
       description:
         "In our wash facility, vehicles are cleaned from the inside out to restore their brand-new appearance.",
-      img: "/services/maintenance.png",
+      img: "/services/polish.png",
     },
     {
       name: "Auto Trimming",
@@ -87,7 +87,7 @@ export const Data = {
       name: "Vehicle Rebuilding",
       description:
         "Vehicle rebuilding or Restoration means more than just making a vehicle's exterior look nice. A full factory restoration involves replacing nearly every part on the car with a newer, better working one, from the gauges in the dashboard to the lining of the trunk walls.",
-      img: "/services/car-repair.png",
+      img: "/services/car-service.png",
     },
   ],
 

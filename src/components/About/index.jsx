@@ -19,7 +19,7 @@ const About = forwardRef((props, ref) => {
             </h1>
           </div>
           <div id="about" className=" sm:flex w-full sm:space-x-8 space-y-4 sm:space-y-0">
-            <div className=" p-10 bg-themeDarker text-white sm:w-1/3 space-y-4 hover:border-b-8 border-yello group hover:scale-110 transform transition duration-300 ease-in-out">
+            <div className=" p-10 bg-themeDarker text-white sm:w-1/3 space-y-4  hover:border-b-8 border-yello group hover:scale-110 transform transition duration-300 ease-in-out">
               <div className="flex justify-center space-x-2 items-center ">
                 <i className="fa-solid fa-eye group-hover:text-yello"></i>
                 <h2 className="text-center text-2xl">Our Vision</h2>
@@ -59,7 +59,7 @@ const About = forwardRef((props, ref) => {
           </div>
         </div>
       </div>
-      <div className="sm:flex w-full py-4 sm:pt-0 sm:space-x-4 px-4 sm:px-0 sm:pr-6 lg:pr-8  bg-themeDarker ">
+      <div className="sm:flex w-full sm:space-x-4 px-4 sm:px-0 sm:pr-6 lg:pr-8  bg-themeDarker ">
         <div className="sm:w-1/2">
           <img
             className="w-full hover:sepia-0"

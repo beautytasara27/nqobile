@@ -11,7 +11,7 @@ const Contact = forwardRef((props, ref) => {
               ref={ref}
               className=" scroll-mt-40 font-anton-regular tracking-wider text-2xl mb-20 text-white"
             >
-              <span className="pr-4 text-yello">04.</span>Get In Touch
+              <span className="pr-4 text-yello">04.</span>Get A Quote
             </h1>
           </div>
           <div className="sm:flex w-full space-y-4 sm:space-y-0 text-sm">
@@ -39,7 +39,11 @@ const Contact = forwardRef((props, ref) => {
                   <i class="fa-sharp fa-solid fa-phone group-hover:text-yello"></i>
                   <a href="tel:+1234567890">Phone: +263 773 599 094</a>
                 </div>
-
+                <div className="flex space-x-2 group">
+                  <i class="fa-sharp fa-solid fa-phone group-hover:text-yello"></i>
+                  <a href="tel:+1234567890">Phone: +263 773 776 664</a>
+                  <p></p>
+                </div>
                 <div className="flex space-x-2 group">
                   <i class="fa-sharp fa-solid fa-phone group-hover:text-yello"></i>
                   <a href="tel:+1234567890">Phone: +263 774 368 973</a>
