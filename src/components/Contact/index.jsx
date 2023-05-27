@@ -47,12 +47,17 @@ const Contact = forwardRef((props, ref) => {
                 </div>
               </div>
             </div>
-            <form className="flex flex-col sm:w-1/2 space-y-4">
+            <form
+              className="flex flex-col sm:w-1/2 space-y-4"
+              data-netlify="true"
+            >
               <input
+                name="Name"
                 placeholder="Your Name"
                 className="bg-transparent border-gray-600 p-2 border-1 border hover:border-yello focus:border-yello focus:outline-none"
               />
               <input
+                name="Email"
                 placeholder="Your Email"
                 className="bg-transparent border-gray-600 p-2 border-1 border hover:border-yello focus:border-yello focus:outline-none"
               />
@@ -61,6 +66,7 @@ const Contact = forwardRef((props, ref) => {
                 className="bg-transparent border-gray-600 p-2 border-1 border hover:border-yello focus:border-yello focus:outline-none"
               />
               <textarea
+                name="Message"
                 rows="4"
                 placeholder="Message"
                 className="bg-transparent border-gray-600 p-2 border-1 border hover:border-yello focus:border-yello focus:outline-none"
