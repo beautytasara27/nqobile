@@ -51,41 +51,27 @@ const Contact = forwardRef((props, ref) => {
                 </div>
               </div>
             </div>
-            <form
-              className="flex flex-col sm:w-1/2 space-y-4"
-              netlify
-            >
-              <input
-              type="text"
-                name="Name"
-                placeholder="Your Name"
-                className="bg-transparent border-gray-400 p-2 border-1 border hover:border-yello focus:border-yello focus:outline-none"
-              />
-              <input
-              type="email"
-                name="Email"
-                placeholder="Your Email"
-                className="bg-transparent border-gray-400 p-2 border-1 border hover:border-yello focus:border-yello focus:outline-none"
-              />
-              <input
-              type="text"
-                placeholder="Subject"
-                className="bg-transparent border-gray-400 p-2 border-1 border hover:border-yello focus:border-yello focus:outline-none"
-              />
-              <textarea
-              type="text"
-                name="Message"
-                rows="4"
-                placeholder="Message"
-                className="bg-transparent border-gray-400 p-2 border-1 border hover:border-yello focus:border-yello focus:outline-none"
-              />
-              <button
-                className="border px-5 py-4 border-yello rounded-[4px] hover:bg-white hover:bg-opacity-100 hover:text-black transition ease-in duration-500"
-                type="submit"
-              >
-                Submit
-              </button>
-            </form>
+            <form name="contact" method="POST" data-netlify="true">
+            <p>
+              <label>Your Name: <input type="text" name="name" /></label>
+            </p>
+            <p>
+              <label>Your Email: <input type="email" name="email" /></label>
+            </p>
+            <p>
+              <label>Your Role: <select name="role[]" multiple>
+                <option value="leader">Leader</option>
+                <option value="follower">Follower</option>
+              </select></label>
+            </p>
+            <p>
+              <label>Message: <textarea name="message"></textarea></label>
+            </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
+          </form>
+          
           </div>
         </div>
       </div>
