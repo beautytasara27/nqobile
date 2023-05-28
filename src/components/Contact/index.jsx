@@ -54,23 +54,26 @@ const Contact = forwardRef((props, ref) => {
             <form
               className="flex flex-col sm:w-1/2 space-y-4"
               netlify
-              method="POST"
             >
               <input
+              type="text"
                 name="Name"
                 placeholder="Your Name"
                 className="bg-transparent border-gray-400 p-2 border-1 border hover:border-yello focus:border-yello focus:outline-none"
               />
               <input
+              type="email"
                 name="Email"
                 placeholder="Your Email"
                 className="bg-transparent border-gray-400 p-2 border-1 border hover:border-yello focus:border-yello focus:outline-none"
               />
               <input
+              type="text"
                 placeholder="Subject"
                 className="bg-transparent border-gray-400 p-2 border-1 border hover:border-yello focus:border-yello focus:outline-none"
               />
               <textarea
+              type="text"
                 name="Message"
                 rows="4"
                 placeholder="Message"
