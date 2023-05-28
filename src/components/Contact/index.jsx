@@ -54,6 +54,8 @@ const Contact = forwardRef((props, ref) => {
             <form
               className="flex flex-col sm:w-1/2 space-y-4"
               netlify
+              name="QouteForm"
+              method="POST"
             >
               <input
               type="text"
