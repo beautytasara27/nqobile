@@ -53,7 +53,7 @@ const Contact = forwardRef((props, ref) => {
             </div>
             <form
               className="flex flex-col sm:w-1/2 space-y-4"
-              data-netlify="true"
+              netlify
             >
               <input
                 name="Name"
