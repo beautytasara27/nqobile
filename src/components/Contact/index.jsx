@@ -55,7 +55,9 @@ const Contact = forwardRef((props, ref) => {
               className="flex flex-col sm:w-1/2 space-y-4"
               netlify
               name="QouteForm"
+              method="post"
             >
+            <input type="hidden" name="form-name" value="QouteForm" />
               <input
               type="text"
                 name="Name"
