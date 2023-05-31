@@ -13,7 +13,8 @@ const Header = ({
     <div className="flex justify-center">
       <div className="fixed z-50 top-0 w-full flex justify-center font-rubik-regular py-2 sm:py-6 bg-white">
         <div className="w-full flex justify-between items-center  relative mx-4 sm:mx-6 lg:mx-8 xl:0">
-          <img src={Logo} alt="logo" width={150} />
+          <img className="hidden lg:block" src={Logo} alt="logo" width={150} />
+          <img className="lg:hidden" src={Logo} alt="logo" width={100} />
           <div className="flex flex-col space-y-2">
             <h1 className="hidden sm:block text-mint uppercase text-center font-anton-regular text-2xl tracking-[.25em]">
               RichJane Enterprise

@@ -31,7 +31,7 @@ const Gallery = forwardRef((props, ref) => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   if (props.experienceIn) {
-    document.getElementById("experience").classList.add("head");
+    document.getElementById("experience").classList.add("landing");
   }
 
   const handleClick = (image) => {
