@@ -47,7 +47,7 @@ const Footer = () => {
             <p></p>
           </div>
         </div>
-        <p> &copy;Designed and developed by XScript.</p>
+        <p> &copy;Designed and developed by <a className="text-yello" target="_blank" href="https://www.linkedin.com/in/beauty-tasara/">XScript.</a></p>
       </div>
     </div>
   );
