@@ -59,10 +59,10 @@ const About = forwardRef((props, ref) => {
           </div>
         </div>
       </div>
-      <div className="sm:flex w-full sm:space-x-4 px-4 sm:px-0 sm:pr-6 lg:pr-8  bg-themeDarker ">
-        <div className="sm:w-1/2">
+      <div className="sm:flex w-full sm:space-x-4 px-4 sm:px-0 sm:pr-6 lg:pr-8 py-4 sm:py-0 sm:pb-4 lg:pb-0 bg-themeDarker ">
+        <div className="sm:w-1/2 md:py-10 lg:py-0">
           <img
-            className="w-full hover:sepia-0"
+            className="w-full h-full hover:sepia-0"
             alt="about image"
             src={AboutImage}
           />
