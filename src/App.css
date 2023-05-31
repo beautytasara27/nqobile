@@ -43,7 +43,7 @@ header {
 
 
 .landingImage{
-  background-image: url('/public/engine.jpg');
+  background-image: url('/public/home.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;

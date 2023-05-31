@@ -7,7 +7,7 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import useIsInViewport from "../helpers/useOnScreen";
 import Projects from "../components/Projects";
-import homeImage from "../assets/images/engine.jpg";
+import homeImage from "../assets/images/home.jpg";
 const Home = () => {
   const landing = useRef(null);
   const about = useRef(null);
@@ -45,7 +45,7 @@ const Home = () => {
           projectsIn={projectsIn}
         />
         <div className="bg-theme ">
-          <div className="lg:p-10">
+          <div className=" bg-themeDarker">
             <div
               className="scroll-mt-28  "
              
