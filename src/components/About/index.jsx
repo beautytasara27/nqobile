@@ -64,7 +64,7 @@ const About = forwardRef((props, ref) => {
           <img
             className="w-full h-full hover:sepia-0"
             alt="about image"
-            src={AboutImage}
+            src={`${process.env.PUBLIC_URL}/gallery/1.jpg`}
           />
         </div>
         <div className="sm:w-1/2">
